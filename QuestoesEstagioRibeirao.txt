@@ -1,0 +1,66 @@
+1) 91
+
+2) #include <stdio.h>
+int main(){
+int x = 0,y = 1,z,i = 1,n;
+    scanf("Digite um número para conferir se ele pertence a ordem de fibonacci %d",&n);
+    while(y<=n){
+      
+      if(y == n){
+          
+      printf("O numero %d pertence a ordem de fibonacci ",n);
+      break;
+      }
+      z = x + y; 
+      x = y;
+      y = z;
+    }
+    
+    if(y > n){
+        printf("O numero %d não pertence a ordem de fibonacci ",n);
+    
+    
+}
+
+3)
+a) 9
+b)128
+c)49
+d)100
+E)13
+f)200
+
+
+4)Primeiro acendo uma lampada e deixo ela ligada por um tempo, depois na segunda vez apago ela e deixou outra acesa e vou ver as lampadas, a que estiver acesa é ligada pela segunda, a que estiver quente foi pela primeira, e a que estiver fria é pela terceira que não foi ligada
+
+
+
+5)
+#include <stdio.h>
+
+int main()
+{
+    char nome[100], n2[100];
+    
+    int i,cont,j;
+    fgets(nome,100,stdin);
+    
+    while(nome[i] != '\n'){
+        i++;
+    }
+    
+    cont = i - 1;
+    
+    for(j=0; j < i;j++){
+        
+        n2[cont] = nome[j];
+        
+        cont--;
+        
+        
+    }
+    
+     puts(n2);
+    return 0;
+}
+
